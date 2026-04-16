@@ -8,6 +8,12 @@
 - endereco
 - rfid
 - status
+contratarPlano()
+AgendarAula()
+CancelarAgendamento()
+atualizarStatus()
+registrarAcesso()
+receberNotificacao()
 
 ***Plano***
 - RF01, RF02, RF04
@@ -16,6 +22,9 @@
 - tipo
 - valor
 - ativo
+Ativar()
+desativar()
+alterarValor()
 
 ***Pagamento***
 - RF03, RF04, RF09
@@ -24,12 +33,18 @@
 - valor
 - formaPagamento
 - status
+registrar()
+confirmar()
+cancelar()
 
 ***Acesso***
 - RF05, RF09
 - idAcesso
 - dataHora
 - autorizado
+registrar()
+autorizar()
+negar()
 
 ***Aula***
 - RF06, RF07, RF09
@@ -37,19 +52,26 @@
 - nome
 - horario
 - capacidadeMaxima
+disponibilidadeHorario()
+reservarVaga()
+liberarVaga()
+registrarPresenca()
 
 ***Agendamento***
 - RF06, RF10
 - idAgendamento
 - dataReserva
 - status
+confirmar()
+cancelar()
 
 ***Presenca***
 - RF07
 - idPresenca
 - data
 - presente
-
+registrar()
+  
 ***AvaliacaoFisica***
 - RF08, RF10
 - idAvaliacao
@@ -59,6 +81,9 @@
 - percentualGordura
 - observacoes
 - anexo
+registrar()
+atualizarDados()
+anexarArquivo()
 
 ***Notificacao***
 - RF10
@@ -67,19 +92,26 @@
 - dataEnvio
 - status
 - mensagem
+enviar()
+marcarComoLida()
 
 ***Instrutor***
 - RF07, RF08
 - idInstrutor
 - nome
 - especialidade
+registrarPresenca()
+realizarAvaliacaoFisica()
 
 ***Recepcionista***
 - RF01, RF03
 - idRecepcionista
 - nome
+cadastrarAluno()
+registrarPagamento()
 
 ***Gerente***
 - RF02, RF09
 - idGerente
 - nome
+gerenciarPlanos()
